@@ -1,6 +1,9 @@
 pipeline {
     agent any 
     stages {
+    stage('scm'){
+    git url:'https://github.com/palanisamym14/express-typescript.git'
+    }
         stage('Build') { 
             steps {
                sh 'npm --version'
